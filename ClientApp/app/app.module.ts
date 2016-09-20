@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 import { FetchDataComponent } from './components/fetchdata/fetchdata.component';
 import { CounterComponent } from './components/counter/counter.component';
 import { ButtonsModule } from '@progress/kendo-angular-buttons';
+import { GridModule } from '@progress/kendo-angular-grid';
 
 @NgModule({
     bootstrap: [ AppComponent ],
@@ -20,6 +21,7 @@ import { ButtonsModule } from '@progress/kendo-angular-buttons';
     imports: [
         UniversalModule,
         ButtonsModule,
+        GridModule,
         RouterModule.forRoot([
             { path: '', redirectTo: 'home', pathMatch: 'full' },
             { path: 'home', component: HomeComponent },
